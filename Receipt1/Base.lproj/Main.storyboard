@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k2m-ud-0l8" id="Alr-I1-gdt">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="852" y="130.88455772113943"/>
         </scene>
-        <!--DetailView-->
+        <!--Recept-->
         <scene sceneID="yzl-Ja-mU4">
             <objects>
-                <viewController title="DetailView" id="2Xo-jd-Fhu" customClass="DetailViewController" customModule="Receipt1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Recept" id="2Xo-jd-Fhu" customClass="DetailViewController" customModule="Receipt1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DMv-8C-zj0"/>
                         <viewControllerLayoutGuide type="bottom" id="3u3-cm-8FX"/>
@@ -84,10 +84,10 @@
             </objects>
             <point key="canvasLocation" x="852" y="853.22338830584715"/>
         </scene>
-        <!--AddView-->
+        <!--Lägg till recept-->
         <scene sceneID="ttm-E0-aFf">
             <objects>
-                <viewController title="AddView" id="uZY-Aa-n7I" customClass="AddViewController" customModule="Receipt1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Lägg till recept" id="uZY-Aa-n7I" customClass="AddViewController" customModule="Receipt1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8XU-He-pzg"/>
                         <viewControllerLayoutGuide type="bottom" id="XPL-va-xF0"/>
@@ -115,8 +115,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17a-p5-22h">
-                                <rect key="frame" x="171" y="85" width="34" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Namn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17a-p5-22h">
+                                <rect key="frame" x="16" y="85" width="45.5" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Nzf-Hn-dHr"/>
                                 </constraints>
@@ -140,7 +140,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Lbz-oP-dbb"/>
                                 </constraints>
-                                <state key="normal" title="Add">
+                                <state key="normal" title="Lägg till">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
                             </button>
@@ -154,12 +154,12 @@
                             <constraint firstItem="qrd-xf-ecB" firstAttribute="top" secondItem="Ucb-2F-gir" secondAttribute="top" id="5QB-zu-fMI"/>
                             <constraint firstAttribute="trailing" secondItem="RYn-IM-Wgy" secondAttribute="trailing" constant="16" id="6PK-oZ-ewm"/>
                             <constraint firstItem="nwF-fA-vqe" firstAttribute="leading" secondItem="Ucb-2F-gir" secondAttribute="leading" id="GfB-RV-k0c"/>
+                            <constraint firstItem="17a-p5-22h" firstAttribute="leading" secondItem="Ucb-2F-gir" secondAttribute="leading" constant="16" id="H2p-3p-U30"/>
                             <constraint firstItem="oBZ-cw-ZIh" firstAttribute="top" secondItem="17a-p5-22h" secondAttribute="bottom" constant="10" id="IdA-wT-cQE"/>
                             <constraint firstAttribute="trailing" secondItem="nwF-fA-vqe" secondAttribute="trailing" id="Jun-mN-GeQ"/>
                             <constraint firstAttribute="trailing" secondItem="J4t-lO-E9u" secondAttribute="trailing" id="SEP-qR-5mU"/>
                             <constraint firstItem="RYn-IM-Wgy" firstAttribute="top" secondItem="oBZ-cw-ZIh" secondAttribute="bottom" constant="20" id="ZfA-Af-OZF"/>
                             <constraint firstItem="XPL-va-xF0" firstAttribute="top" secondItem="qrd-xf-ecB" secondAttribute="bottom" id="dKv-en-Dmt"/>
-                            <constraint firstItem="17a-p5-22h" firstAttribute="centerX" secondItem="Ucb-2F-gir" secondAttribute="centerX" id="e7b-F0-AZ2"/>
                             <constraint firstItem="RYn-IM-Wgy" firstAttribute="leading" secondItem="Ucb-2F-gir" secondAttribute="leading" constant="16" id="euc-vb-ajA"/>
                             <constraint firstAttribute="trailing" secondItem="qrd-xf-ecB" secondAttribute="trailing" id="gFX-Lm-SRy"/>
                             <constraint firstItem="nwF-fA-vqe" firstAttribute="top" secondItem="RYn-IM-Wgy" secondAttribute="bottom" constant="20" id="uhW-Gw-r6i"/>
