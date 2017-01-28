@@ -17,6 +17,8 @@
 		3520A7E11E2F778B0020FCE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3520A7DF1E2F778B0020FCE2 /* LaunchScreen.storyboard */; };
 		3520A7EC1E2F778B0020FCE2 /* Receipt1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3520A7EB1E2F778B0020FCE2 /* Receipt1Tests.swift */; };
 		3520A7F71E2F778B0020FCE2 /* Receipt1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3520A7F61E2F778B0020FCE2 /* Receipt1UITests.swift */; };
+		357EB1FD1E3CF646000945F4 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357EB1FC1E3CF646000945F4 /* Recipe.swift */; };
+		357EB1FF1E3CF6B9000945F4 /* RecipeBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357EB1FE1E3CF6B9000945F4 /* RecipeBook.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		3520A7F21E2F778B0020FCE2 /* Receipt1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Receipt1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3520A7F61E2F778B0020FCE2 /* Receipt1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receipt1UITests.swift; sourceTree = "<group>"; };
 		3520A7F81E2F778B0020FCE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		357EB1FC1E3CF646000945F4 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		357EB1FE1E3CF6B9000945F4 /* RecipeBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeBook.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,8 @@
 				3520A7DD1E2F778B0020FCE2 /* Assets.xcassets */,
 				3520A7DF1E2F778B0020FCE2 /* LaunchScreen.storyboard */,
 				3520A7E21E2F778B0020FCE2 /* Info.plist */,
+				357EB1FC1E3CF646000945F4 /* Recipe.swift */,
+				357EB1FE1E3CF6B9000945F4 /* RecipeBook.swift */,
 			);
 			path = Receipt1;
 			sourceTree = "<group>";
@@ -270,8 +276,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3520A7D91E2F778B0020FCE2 /* ViewController.swift in Sources */,
+				357EB1FF1E3CF6B9000945F4 /* RecipeBook.swift in Sources */,
 				3520A7D71E2F778B0020FCE2 /* AppDelegate.swift in Sources */,
 				3511B46B1E3CE7F700AA4FA3 /* customCell.swift in Sources */,
+				357EB1FD1E3CF646000945F4 /* Recipe.swift in Sources */,
 				3511B4671E3CA47D00AA4FA3 /* AddViewController.swift in Sources */,
 				3511B4691E3CA49100AA4FA3 /* DetailViewController.swift in Sources */,
 			);
