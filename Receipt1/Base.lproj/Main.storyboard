@@ -66,7 +66,6 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="7Qu-7k-yOg">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -106,12 +105,14 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="titleDoneButton_click:" destination="uZY-Aa-n7I" eventType="editingDidEndOnExit" id="19e-Ry-pCt"/>
+                                </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RYn-IM-Wgy">
                                 <rect key="frame" x="16" y="166" width="343" height="340"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -143,6 +144,9 @@
                                 <state key="normal" title="Lägg till">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="addButton_click:" destination="uZY-Aa-n7I" eventType="touchUpInside" id="ucJ-4c-OCL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -168,6 +172,19 @@
                             <constraint firstItem="J4t-lO-E9u" firstAttribute="leading" secondItem="Ucb-2F-gir" secondAttribute="leading" id="ycL-Mt-sFv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Lägg till recept" id="5vB-GA-hBU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="Yk3-RK-z47">
+                            <connections>
+                                <action selector="doneButton_click:" destination="uZY-Aa-n7I" id="JEs-4v-mjm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="nwF-fA-vqe" id="Rgc-cz-1J4"/>
+                        <outlet property="doneButton" destination="Yk3-RK-z47" id="TH2-4q-Vrz"/>
+                        <outlet property="recipeContent" destination="RYn-IM-Wgy" id="Rtf-Bb-UEI"/>
+                        <outlet property="titleText" destination="oBZ-cw-ZIh" id="MC0-rX-CqS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4a-TG-jTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

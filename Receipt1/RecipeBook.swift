@@ -14,7 +14,7 @@ class RecipeBook: NSObject
     
     class func AddRecipe(title: String, content: String)
     {
-        var r = Recipe(title: title, content: content)
+        let r = Recipe(title: title, content: content)
         
         recipes.append(r)
     }

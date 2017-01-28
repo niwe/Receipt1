@@ -10,9 +10,6 @@ import UIKit
 
 class ViewController: UITableViewController
 {
-
-    let array = ["item1", "item2", "item3"]
-    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -25,6 +22,8 @@ class ViewController: UITableViewController
     {
         super.viewDidAppear(animated)
         
+        tableView.reloadData()
+        
         navigationController?.navigationBar.alpha = 0.5
     }
 
@@ -36,7 +35,7 @@ class ViewController: UITableViewController
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return array.count;
+        return RecipeBook.recipes.count
     }
     
     
@@ -55,8 +54,10 @@ class ViewController: UITableViewController
         }
         
         cell.textLabel?.textColor = UIColor.white
-        cell.textLabel?.text = array[indexPath.item]
-        cell.Receip = cell.textLabel?.text
+        
+        let recipe = RecipeBook.recipes[indexPath.item]
+        cell.textLabel?.text = recipe.title
+        cell.recipe = recipe
         
         return cell;
     }
@@ -67,8 +68,10 @@ class ViewController: UITableViewController
         {
             let cell = sender as! customCell
             let detailview = segue.destination as! DetailViewController
-            detailview.preReceipe = cell.Receip
+            detailview.preRecipe = cell.recipe
         }
+        
+        
     }
 }
 

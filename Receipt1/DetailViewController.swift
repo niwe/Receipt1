@@ -10,14 +10,14 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    var preReceipe:String?
+    var preRecipe:Recipe?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
-        self.title = preReceipe
+        self.title = preRecipe?.title
     }
 
     override func viewDidAppear(_ animated: Bool)
