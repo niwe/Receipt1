@@ -151,6 +151,11 @@
                                     <action selector="addButton_click:" destination="uZY-Aa-n7I" eventType="touchUpInside" id="ucJ-4c-OCL"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2VJ-1N-lx1">
+                                <rect key="frame" x="170" y="316" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -183,6 +188,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="activityIndicator" destination="2VJ-1N-lx1" id="P1O-fG-r5S"/>
                         <outlet property="addButton" destination="nwF-fA-vqe" id="Rgc-cz-1J4"/>
                         <outlet property="doneButton" destination="Yk3-RK-z47" id="TH2-4q-Vrz"/>
                         <outlet property="recipeContent" destination="RYn-IM-Wgy" id="Rtf-Bb-UEI"/>

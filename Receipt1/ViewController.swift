@@ -65,6 +65,15 @@ class ViewController: UITableViewController
         return cell;
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath)
+    {
+        if (editingStyle == .delete)
+        {
+            RecipeBook.DeleteRecipe(id: indexPath.item)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if (segue.identifier == "detailview")

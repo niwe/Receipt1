@@ -15,11 +15,14 @@ class AddViewController: UIViewController {
     @IBOutlet var recipeContent: UITextView!
     @IBOutlet var doneButton: UIBarButtonItem!
     @IBOutlet var addButton: UIButton!
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.titleText .becomeFirstResponder()
         
         handleButtonStates()
         
@@ -85,14 +88,20 @@ class AddViewController: UIViewController {
     
     @IBAction func addButton_click(_ sender: Any)
     {
+        activityIndicator.startAnimating()
+        
         RecipeBook.AddRecipe(title: titleText.text!, content: recipeContent.text)
         
-        //ViewController.tableView().reloadData()
-        
-        
+        let deadlineTime = DispatchTime.now() + .milliseconds(300)
+        DispatchQueue.main.asyncAfter(deadline: deadlineTime)
+        {
+            self.activityIndicator.stopAnimating()
+        }
         
         titleText.text = ""
         recipeContent.text = ""
+        
+        //titleText .becomeFirstResponder()
     }
     
     /*
