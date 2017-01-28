@@ -10,12 +10,21 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    var preReceipe:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        self.title = preReceipe
     }
 
+    override func viewDidAppear(_ animated: Bool)
+    {
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

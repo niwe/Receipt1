@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3511B4671E3CA47D00AA4FA3 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3511B4661E3CA47D00AA4FA3 /* AddViewController.swift */; };
 		3511B4691E3CA49100AA4FA3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3511B4681E3CA49100AA4FA3 /* DetailViewController.swift */; };
+		3511B46B1E3CE7F700AA4FA3 /* customCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3511B46A1E3CE7F700AA4FA3 /* customCell.swift */; };
 		3520A7D71E2F778B0020FCE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3520A7D61E2F778B0020FCE2 /* AppDelegate.swift */; };
 		3520A7D91E2F778B0020FCE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3520A7D81E2F778B0020FCE2 /* ViewController.swift */; };
 		3520A7DC1E2F778B0020FCE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3520A7DA1E2F778B0020FCE2 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		3511B4661E3CA47D00AA4FA3 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		3511B4681E3CA49100AA4FA3 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3511B46A1E3CE7F700AA4FA3 /* customCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customCell.swift; sourceTree = "<group>"; };
 		3520A7D31E2F778B0020FCE2 /* Receipt1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Receipt1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3520A7D61E2F778B0020FCE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3520A7D81E2F778B0020FCE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		3520A7D51E2F778B0020FCE2 /* Receipt1 */ = {
 			isa = PBXGroup;
 			children = (
+				3511B46A1E3CE7F700AA4FA3 /* customCell.swift */,
 				3520A7D61E2F778B0020FCE2 /* AppDelegate.swift */,
 				3511B4661E3CA47D00AA4FA3 /* AddViewController.swift */,
 				3511B4681E3CA49100AA4FA3 /* DetailViewController.swift */,
@@ -268,6 +271,7 @@
 			files = (
 				3520A7D91E2F778B0020FCE2 /* ViewController.swift in Sources */,
 				3520A7D71E2F778B0020FCE2 /* AppDelegate.swift in Sources */,
+				3511B46B1E3CE7F700AA4FA3 /* customCell.swift in Sources */,
 				3511B4671E3CA47D00AA4FA3 /* AddViewController.swift in Sources */,
 				3511B4691E3CA49100AA4FA3 /* DetailViewController.swift in Sources */,
 			);

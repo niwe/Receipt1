@@ -21,20 +21,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Bluish" translatesAutoresizingMaskIntoConstraints="NO" id="Qfh-vy-YZu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bluish" translatesAutoresizingMaskIntoConstraints="NO" id="Qfh-vy-YZu">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Copyright (c) 2017 Nicklas. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0g-V8-bvP">
-                                <rect key="frame" x="21" y="582" width="333" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2017 Nicklas. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0g-V8-bvP">
+                                <rect key="frame" x="47" y="582" width="281" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAf-OO-Ogx">
-                                <rect key="frame" x="40" y="129" width="295" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAf-OO-Ogx">
+                                <rect key="frame" x="70" y="150" width="236" height="77"/>
                                 <string key="text">World Renouned
 Receipts</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
@@ -43,6 +40,17 @@ Receipts</string>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qfh-vy-YZu" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="8eW-Xl-he4"/>
+                            <constraint firstItem="FAf-OO-Ogx" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="E7r-7h-Vj9"/>
+                            <constraint firstAttribute="trailing" secondItem="Qfh-vy-YZu" secondAttribute="trailing" id="EyE-4Z-xbN"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Qfh-vy-YZu" secondAttribute="bottom" id="KwH-Hp-Reh"/>
+                            <constraint firstItem="FAf-OO-Ogx" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="150" id="T1c-S2-iHD"/>
+                            <constraint firstItem="J0g-V8-bvP" firstAttribute="top" secondItem="Qfh-vy-YZu" secondAttribute="bottom" constant="-85" id="TGg-mW-RJW"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="J0g-V8-bvP" secondAttribute="bottom" constant="70" id="TZ6-bK-idg"/>
+                            <constraint firstItem="Qfh-vy-YZu" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="X75-xi-iOn"/>
+                            <constraint firstItem="J0g-V8-bvP" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nRD-rM-zrT"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

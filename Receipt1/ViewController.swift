@@ -21,8 +21,8 @@ class ViewController: UITableViewController
         tableView.backgroundView = UIImageView(image: UIImage(named: "Mountains"))
     }
     
-    
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool)
+    {
         super.viewDidAppear(animated)
         
         navigationController?.navigationBar.alpha = 0.5
@@ -42,7 +42,7 @@ class ViewController: UITableViewController
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "customcell")! as UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "customcell") as! customCell
         
         if (indexPath.item % 2 == 0)
         {
@@ -56,8 +56,19 @@ class ViewController: UITableViewController
         
         cell.textLabel?.textColor = UIColor.white
         cell.textLabel?.text = array[indexPath.item]
+        cell.Receip = cell.textLabel?.text
         
         return cell;
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if (segue.identifier == "detailview")
+        {
+            let cell = sender as! customCell
+            let detailview = segue.destination as! DetailViewController
+            detailview.preReceipe = cell.Receip
+        }
     }
 }
 
