@@ -38,7 +38,7 @@
                     <navigationItem key="navigationItem" id="Ls7-RY-nq2">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="pUp-ZO-BMz">
                             <connections>
-                                <segue destination="uZY-Aa-n7I" kind="show" id="wwf-WD-gjP"/>
+                                <segue destination="uZY-Aa-n7I" kind="show" identifier="addview" id="wwf-WD-gjP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -78,6 +78,9 @@
                             <constraint firstAttribute="trailing" secondItem="7Qu-7k-yOg" secondAttribute="trailing" id="tVb-h4-V3c"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="reciptContent" destination="7Qu-7k-yOg" id="flW-G0-8S9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0HR-9Y-OaD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

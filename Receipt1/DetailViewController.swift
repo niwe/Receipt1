@@ -10,6 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet var reciptContent: UITextView!
     var preRecipe:Recipe?
     
     override func viewDidLoad() {
@@ -18,6 +19,7 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         self.title = preRecipe?.title
+        self.reciptContent.text = preRecipe?.content
     }
 
     override func viewDidAppear(_ animated: Bool)

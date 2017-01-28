@@ -18,11 +18,14 @@ class ViewController: UITableViewController
         tableView.backgroundView = UIImageView(image: UIImage(named: "Mountains"))
     }
     
+    override func viewWillAppear(_ animated: Bool)
+    {
+        tableView.reloadData()
+    }
+    
     override func viewDidAppear(_ animated: Bool)
     {
         super.viewDidAppear(animated)
-        
-        tableView.reloadData()
         
         navigationController?.navigationBar.alpha = 0.5
     }
@@ -70,8 +73,6 @@ class ViewController: UITableViewController
             let detailview = segue.destination as! DetailViewController
             detailview.preRecipe = cell.recipe
         }
-        
-        
     }
 }
 
