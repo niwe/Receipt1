@@ -14,8 +14,11 @@ class ViewController: UITableViewController
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         tableView.rowHeight = 70;
         tableView.backgroundView = UIImageView(image: UIImage(named: "Mountains"))
+        
+        UserDefaultsManager.initializeDefaults()
     }
     
     override func viewWillAppear(_ animated: Bool)

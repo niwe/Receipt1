@@ -92,6 +92,8 @@ class AddViewController: UIViewController {
         
         RecipeBook.AddRecipe(title: titleText.text!, content: recipeContent.text)
         
+        UserDefaultsManager.synchronize()
+        
         let deadlineTime = DispatchTime.now() + .milliseconds(300)
         DispatchQueue.main.asyncAfter(deadline: deadlineTime)
         {
